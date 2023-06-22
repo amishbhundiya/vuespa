@@ -112,7 +112,7 @@ export default {
         if (getProducts.data.code == 1) {
           this.products = getProducts.data.data;
         } else {
-          //
+          this.products = [];
         }
       } else {
         Vue.$toast.error("No Products found", {
